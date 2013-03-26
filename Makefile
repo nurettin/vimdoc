@@ -4,7 +4,7 @@ vimdoc:
 	echo "Son Güncelleme" >> prepend && \
 	git log -1 --date=iso --format="%cd" >> prepend && \
 	cat vimdoc.html >> prepend && \
-	echo '</body' >> prepend && \
+	echo '</body>' >> prepend && \
 	mv prepend vimdoc.html
 clear:
 	rm -rf vimdoc.html prepend
