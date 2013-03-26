@@ -1,5 +1,5 @@
 vimdoc:
-	markdown vimdoc.md > vimdoc.html && \
+	markdown README.md > vimdoc.html && \
 	echo '<!DOCTYPE html><head><meta charset="utf-8" /><title></title></head><body>' > prepend && \
 	cat vimdoc.html >> prepend && \
 	echo '</body' >> prepend && \
