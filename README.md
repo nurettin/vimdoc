@@ -8,9 +8,9 @@ Vim Dokümanı
 
 <table>
   <tbody>
-    <tr><td>[T]<td><td>: Klavyedeki T tuşu<td></tr>
-    <tr><td>$<td><td>: Komut satırı<td></tr>
-    <tr><td>:metin<td><td>: Vim komutu<td></tr>
+    <tr><td>[T]</td><td>Klavyedeki T tuşu</td></tr>
+    <tr><td>$</td><td>Komut satırı</td></tr>
+    <tr><td>:metin</td><td>Vim komutu</td></tr>
   </tbody>
 </table>
 
