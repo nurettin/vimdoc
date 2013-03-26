@@ -3,7 +3,6 @@ Vim Dokümanı
 
 - Sebep: Vim kullanımı ve incelikleri hakkında Türkçe doküman eksikliği
 - Tarih: 21.03.2013
-- Güncelleme: 21.03.2013
 
 ### Açıklama
 
