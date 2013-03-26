@@ -14,13 +14,13 @@ Vim Dokümanı
   </tbody>
 </table>
 
-### İçindekiler
+### <a id="icindekiler" />İçindekiler
 
 * [Bir dosyayı nasıl düzenlerim ?](#duzenle)
 
 * [Düzenlediğim dosyayı nasıl kaydederim ?](#kaydetcik)
 
-## <a id="duzenle"></a>Bir dosyayı nasıl düzenlerim ?
+## <a id="duzenle" />Bir dosyayı nasıl düzenlerim ? ([içindekiler](#icindekiler))
 
 $ vim metin.txt
 
@@ -30,7 +30,7 @@ Düzenleme modunda ok tuşları, yazma ve silme tuşları beklendiği gibi çal�
 
 Ayrica bkz. [Düzenlediğim dosyayı nasıl kaydederim ?](#kaydetcik)
 
-## <a id="kaydetcik"></a>Düzenlediğim dosyayı nasıl kaydederim ?
+## <a id="kaydetcik" />Düzenlediğim dosyayı nasıl kaydederim ? ([içindekiler](#icindekiler))
 
 [ESC] tuşuyla düzenleme modundan çıkılır.
 
