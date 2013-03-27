@@ -8,7 +8,7 @@ Vim Dokümanı
 
 <table>
   <tbody>
-    <tr><td><key>[T]</key></td><td>Klavyedeki T tuşu</td></tr>
+    <tr><td>[T]</td><td>Klavyedeki T tuşu</td></tr>
     <tr><td>$</td><td>Komut satırı</td></tr>
     <tr><td>:metin</td><td>Vim komutu</td></tr>
   </tbody>
@@ -29,11 +29,15 @@ Vim Dokümanı
 
 Düzenleme modunda ok tuşları, yazma ve silme tuşları beklendiği gibi çalışır.
 
+Tavsiye: <key>SHIFT</key>-<key>OK</key> tuşları kelime atlar.
+
 Ayrica bkz. [Düzenlediğim dosyayı nasıl kaydederim ?](#kaydetcik)
 
 ## <a id="kaydetcik" />Düzenlediğim dosyayı nasıl kaydederim ? 
 ([içindekiler](#icindekiler))
 
-`[ESC]` tuşuyla düzenleme modundan çıkılır.
+`[ESC]` düzenleme modundan çıkar.
 
-`:wq` komutuyla dosya kaydedilir ve çıkılır.
+`:w` dosyayı kaydeder.
+
+`:wq` dosyayı kaydeder ve çıkar.
