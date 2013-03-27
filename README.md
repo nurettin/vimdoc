@@ -8,7 +8,7 @@ Vim Dokümanı
 
 <table>
   <tbody>
-    <tr><td>[T]</td><td>Klavyedeki T tuşu</td></tr>
+    <tr><td>`[T]`</td><td>Klavyedeki T tuşu</td></tr>
     <tr><td>$</td><td>Komut satırı</td></tr>
     <tr><td>:metin</td><td>Vim komutu</td></tr>
   </tbody>
@@ -25,7 +25,7 @@ Vim Dokümanı
 
 $ vim metin.txt
 
-[i] tuşuna basarak düzenleme moduna girin
+`[i]` tuşuna basarak düzenleme moduna girin
 
 Düzenleme modunda ok tuşları, yazma ve silme tuşları beklendiği gibi çalışır.
 
@@ -34,6 +34,6 @@ Ayrica bkz. [Düzenlediğim dosyayı nasıl kaydederim ?](#kaydetcik)
 ## <a id="kaydetcik" />Düzenlediğim dosyayı nasıl kaydederim ? 
 ([içindekiler](#icindekiler))
 
-[ESC] tuşuyla düzenleme modundan çıkılır.
+`[ESC]` tuşuyla düzenleme modundan çıkılır.
 
 :wq komutuyla dosya kaydedilir ve çıkılır.
