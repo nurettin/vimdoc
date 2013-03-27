@@ -1,7 +1,6 @@
 Vim Dokümanı
 ============
 
-- Yazan: Nurettin Onur TUĞCU
 - Sebep: Vim kullanımı ve incelikleri hakkında Türkçe doküman eksikliği
 - Tarih: 21.03.2013
 
