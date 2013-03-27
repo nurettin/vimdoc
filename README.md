@@ -29,7 +29,7 @@ Vim Dokümanı
 
 Düzenleme modunda ok tuşları, yazma ve silme tuşları beklendiği gibi çalışır.
 
-Tavsiye: <key>SHIFT</key>-<key>OK</key> tuşları kelime atlar.
+Tavsiye: `SHIFT`-`OK` tuşlarıyla kelime atlayın.
 
 Ayrica bkz. [Düzenlediğim dosyayı nasıl kaydederim ?](#kaydetcik)
 
