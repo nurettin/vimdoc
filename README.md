@@ -23,7 +23,7 @@ Vim Dokümanı
 ## <a id="duzenle" />Bir dosyayı nasıl düzenlerim ? 
 ([içindekiler](#icindekiler))
 
-$ vim metin.txt
+    $ vim metin.txt
 
 `[i]` tuşuna basarak düzenleme moduna girin
 
@@ -36,4 +36,4 @@ Ayrica bkz. [Düzenlediğim dosyayı nasıl kaydederim ?](#kaydetcik)
 
 `[ESC]` tuşuyla düzenleme modundan çıkılır.
 
-:wq komutuyla dosya kaydedilir ve çıkılır.
+`:wq` komutuyla dosya kaydedilir ve çıkılır.
