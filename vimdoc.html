@@ -1,9 +1,10 @@
 <!DOCTYPE html><head><meta charset="utf-8" /><title></title></head><body>
 Son Güncelleme
-2013-03-27 09:43:47 +0200
+2013-03-27 09:44:46 +0200
 <h1>Vim Dokümanı</h1>
 
 <ul>
+<li>Yazan: Nurettin Onur TUĞCU <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/3.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text" property="dct:title" rel="dct:type">Vimdoc.tr</span> by <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">Nurettin Onur TUĞCU</span> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US">Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a></li>
 <li>Sebep: Vim kullanımı ve incelikleri hakkında Türkçe doküman eksikliği</li>
 <li>Tarih: 21.03.2013</li>
 </ul>
@@ -21,32 +22,71 @@ Son Güncelleme
 <h3><a id="icindekiler" />İçindekiler</h3>
 
 <ul>
-<li><p><a href="#duzenle">Bir dosyayı nasıl düzenlerim ?</a></p></li>
-<li><p><a href="#kaydetcik">Düzenlediğim dosyayı nasıl kaydederim ?</a></p></li>
+<li><p><a href="#duzenle">Bir dosyaya nasıl yazarım ?</a></p></li>
+<li><p><a href="#ilerigeri">Yazdığım değişiklikleri hangi komutla geri alırım ?</a></p></li>
+<li><p><a href="#kaydetcik">Yazdığım dosyayı hangi komutla kaydederim ?</a></p></li>
+<li><p><a href="#gez">Dosya içinde gezinme komutları nelerdir ?</a></p></li>
+<li><p><a href="#bulduzelt">Metin düzenleme komutları nelerdir ?</a></p></li>
 </ul>
 
-<h2><a id="duzenle" />Bir dosyayı nasıl düzenlerim ?</h2>
+<h2><a id="duzenle" />Bir dosyaya nasıl yazarım ?</h2>
 
 <p>(<a href="#icindekiler">içindekiler</a>)</p>
+
+<p>Vim, komut modunda başlar. </p>
 
 <pre><code>$ vim metin.txt
 </code></pre>
 
-<p><code>[i]</code> tuşuna basarak düzenleme moduna girin</p>
+<ul>
+<li><p><code>[i]</code> metin yazma moduna geçer.</p></li>
+<li><p><code>[ESC]</code> yazma modundan komut moduna geçer.</p></li>
+<li><p><code>[a]</code> bir sonraki haneye atlayıp yazma moduna geçer.</p></li>
+<li><p><code>[A]</code> satır sonuna atlayıp yazma moduna geçer.</p></li>
+</ul>
 
-<p>Düzenleme modunda ok tuşları, yazma ve silme tuşları beklendiği gibi çalışır.</p>
-
-<p>Tavsiye: <code>SHIFT</code>-<code>OK</code> tuşlarıyla kelime atlayın.</p>
-
-<p>Ayrica bkz. <a href="#kaydetcik">Düzenlediğim dosyayı nasıl kaydederim ?</a></p>
-
-<h2><a id="kaydetcik" />Düzenlediğim dosyayı nasıl kaydederim ?</h2>
+<h2><a id="kaydetcik" />Yazdığım dosyayı hangi komutla kaydederim ?</h2>
 
 <p>(<a href="#icindekiler">içindekiler</a>)</p>
 
-<p><code>[ESC]</code> düzenleme modundan çıkar.</p>
+<ul>
+<li><p><code>:w</code> dosyayı kaydeder. (sık sık kaydetmeniz gerekecek)</p></li>
+<li><p><code>:q</code> dosyadan çıkar.</p></li>
+<li><p><code>:q!</code> kaydetmeden çıkar.</p></li>
+<li><p><code>:wq</code> dosyayı kaydeder ve çıkar.</p></li>
+</ul>
 
-<p><code>:w</code> dosyayı kaydeder.</p>
+<h2><a id="ilerigeri" />Yazdığım değişiklikleri hangi komutla geri alırım ?</h2>
 
-<p><code>:wq</code> dosyayı kaydeder ve çıkar.</p>
+<p>(<a href="#icindekiler">içindekiler</a>)</p>
+
+<ul>
+<li><p><code>[u]</code> yaptığınız değişikliği geri alır.</p></li>
+<li><p><code>[CTRL]</code>-<code>[r]</code> yaptığınız değişikliği ileri alır.</p></li>
+</ul>
+
+<h2><a id="gez" />Dosya içinde gezinme komutları nelerdir ?</h2>
+
+<p>(<a href="#icindekiler">içindekiler</a>)</p>
+
+<ul>
+<li><p><code>:g 42</code> 42'nci satıra gider.</p></li>
+<li><p><code>[G]</code> son satıra gider.</p></li>
+<li><p><code>[SHIFT]</code>-<code>[OK]</code> ya da <code>[CTRL]</code>-<code>[OK]</code> tuşları kelime atlar.</p></li>
+</ul>
+
+<h2><a id="bulduzelt" />Metin seçme düzenleme komutları nelerdir ?</h2>
+
+<p>(<a href="#icindekiler">içindekiler</a>)</p>
+
+<ul>
+<li><p><code>:%s/metin1/metin2/g</code> dosyadaki tüm metin1 yazılarını metin2 yapar.</p></li>
+<li><p><code>[d][d]</code> ile bir satırı kesebilirsiniz.</p></li>
+<li><p><code>[y]</code> ile bir satırı kopyalayabilirsiniz.</p></li>
+<li><p><code>[p]</code> ile kesilmiş satırı aşağı yapıştırabilirsiniz.</p></li>
+<li><p><code>[P]</code> ile kesilmiş satırı yukarı yapıştırabilirsiniz.</p></li>
+<li><p><code>[V]</code> ile satır seçme moduna girilir. Oklarla seçip çeşitli komutlar girebilirsiniz. </p></li>
+<li><p><code>[CTRL]</code>-<code>[v]</code> ile kutu seçme moduna girilir.</p></li>
+<li><p><code>[ESC]</code> seçme modundan komut moduna geçer.</p></li>
+</ul>
 </body>

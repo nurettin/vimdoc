@@ -1,6 +1,7 @@
 Vim Dokümanı
 ============
 
+- Yazan: Nurettin Onur TUĞCU
 - Sebep: Vim kullanımı ve incelikleri hakkında Türkçe doküman eksikliği
 - Tarih: 21.03.2013
 
@@ -16,28 +17,75 @@ Vim Dokümanı
 
 ### <a id="icindekiler" />İçindekiler
 
-* [Bir dosyayı nasıl düzenlerim ?](#duzenle)
+* [Bir dosyaya nasıl yazarım ?](#duzenle)
 
-* [Düzenlediğim dosyayı nasıl kaydederim ?](#kaydetcik)
+* [Yazdığım değişiklikleri hangi komutla geri alırım ?](#ilerigeri)
 
-## <a id="duzenle" />Bir dosyayı nasıl düzenlerim ? 
+* [Yazdığım dosyayı hangi komutla kaydederim ?](#kaydetcik)
+
+* [Dosya içinde gezinme komutları nelerdir ?](#gez)
+
+* [Metin düzenleme komutları nelerdir ?](#bulduzelt)
+
+## <a id="duzenle" />Bir dosyaya nasıl yazarım ? 
 ([içindekiler](#icindekiler))
+
+Vim, komut modunda başlar. 
 
     $ vim metin.txt
 
-`[i]` tuşuna basarak düzenleme moduna girin
+* `[i]` metin yazma moduna geçer.
 
-Düzenleme modunda ok tuşları, yazma ve silme tuşları beklendiği gibi çalışır.
+* `[ESC]` yazma modundan komut moduna geçer.
 
-Tavsiye: `SHIFT`-`OK` tuşlarıyla kelime atlayın.
+* `[a]` bir sonraki haneye atlayıp yazma moduna geçer.
 
-Ayrica bkz. [Düzenlediğim dosyayı nasıl kaydederim ?](#kaydetcik)
+* `[A]` satır sonuna atlayıp yazma moduna geçer.
 
-## <a id="kaydetcik" />Düzenlediğim dosyayı nasıl kaydederim ? 
+## <a id="kaydetcik" />Yazdığım dosyayı hangi komutla kaydederim ? 
 ([içindekiler](#icindekiler))
 
-`[ESC]` düzenleme modundan çıkar.
+* `:w` dosyayı kaydeder. (sık sık kaydetmeniz gerekecek)
 
-`:w` dosyayı kaydeder.
+* `:q` dosyadan çıkar.
 
-`:wq` dosyayı kaydeder ve çıkar.
+* `:q!` kaydetmeden çıkar.
+
+* `:wq` dosyayı kaydeder ve çıkar.
+
+## <a id="ilerigeri" />Yazdığım değişiklikleri hangi komutla geri alırım ?
+([içindekiler](#icindekiler))
+
+* `[u]` yaptığınız değişikliği geri alır.
+
+* `[CTRL]`-`[r]` yaptığınız değişikliği ileri alır.
+
+## <a id="gez" />Dosya içinde gezinme komutları nelerdir ?
+([içindekiler](#icindekiler))
+
+* `:g 42` 42'nci satıra gider.
+
+* `[G]` son satıra gider.
+
+* `[SHIFT]`-`[OK]` ya da `[CTRL]`-`[OK]` tuşları kelime atlar.
+
+## <a id="bulduzelt" />Metin seçme düzenleme komutları nelerdir ?
+([içindekiler](#icindekiler))
+
+* `:%s/metin1/metin2/g` dosyadaki tüm metin1 yazılarını metin2 yapar.
+
+* `[d][d]` ile bir satırı kesebilirsiniz.
+
+* `[y]` ile bir satırı kopyalayabilirsiniz.
+
+* `[p]` ile kesilmiş satırı aşağı yapıştırabilirsiniz.
+
+* `[P]` ile kesilmiş satırı yukarı yapıştırabilirsiniz.
+
+* `[V]` ile satır seçme moduna girilir. Oklarla seçip çeşitli komutlar girebilirsiniz. 
+
+* `[CTRL]`-`[v]` ile kutu seçme moduna girilir.
+
+* `[ESC]` seçme modundan komut moduna geçer.
+
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/3.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text" property="dct:title" rel="dct:type">Vimdoc.tr</span> by <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">Nurettin Onur TUĞCU</span> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US">Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a>
