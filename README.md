@@ -8,7 +8,7 @@ Vim Dokümanı
 
 <table>
   <tbody>
-    <tr><td>`[T]`</td><td>Klavyedeki T tuşu</td></tr>
+    <tr><td><key>[T]</key></td><td>Klavyedeki T tuşu</td></tr>
     <tr><td>$</td><td>Komut satırı</td></tr>
     <tr><td>:metin</td><td>Vim komutu</td></tr>
   </tbody>
